@@ -48,9 +48,10 @@
         <div class="absolute inset-0 bg-[#0a0f18]/85"></div>
     </div>
 
-    <!-- 1. Navbar -->
+   <!-- 1. Navbar -->
     <nav class="fixed top-0 w-full z-50 bg-[#0a0f18]/80 backdrop-blur-md border-b border-white/5 transition-all duration-300">
-        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+        <!-- Altura reduzida de h-20 para h-16 -->
+        <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
             <a href="#" class="font-serif text-xl font-medium text-amber-500 tracking-wide">
                 Cabana Schmitt
             </a>
@@ -62,12 +63,13 @@
                 <a href="#localizacao" class="hover:text-amber-500 transition-colors">Localização</a>
             </div>
 
-            <a href="#reservar" class="bg-amber-500 hover:bg-amber-400 text-[#0a0f18] text-sm font-medium px-6 py-2 rounded-full transition-all duration-300 transform hover:-translate-y-0.5">
+            <!-- Botão com padding ligeiramente ajustado (px-5 py-2) e fonte 13px para acompanhar a barra mais fina -->
+            <a href="#reservar" class="bg-amber-500 hover:bg-amber-400 text-[#0a0f18] text-[13px] font-medium px-5 py-2 rounded-full transition-all duration-300 transform hover:-translate-y-0.5">
                 Reservar
             </a>
         </div>
     </nav>
-
+    
   <!-- 2. Hero Section -->
     <header class="relative h-screen min-h-[500px] flex items-center pt-20">
         <div class="absolute inset-0 z-0">
