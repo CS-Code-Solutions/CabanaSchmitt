@@ -453,44 +453,55 @@
         </div>
     </section>
 
-    <!-- 9. Reservar -->
+ <!-- 9. Reservar -->
     <section id="reservar" class="py-16 md:py-20 max-w-7xl mx-auto px-6 border-t border-white/5">
         <div class="grid md:grid-cols-2 gap-10 md:gap-12 items-start">
+            <!-- Coluna da Esquerda (Texto e Airbnb) -->
             <div class="sticky top-24 md:top-32 max-w-md mx-auto md:mx-0 text-center md:text-left">
-                <i data-lucide="calendar-heart" class="w-6 h-6 text-amber-500 mb-4 md:mb-5 mx-auto md:mx-0"></i>
+                <i data-lucide="calendar-heart" class="w-6 h-6 text-[#d4af37] mb-4 md:mb-5 mx-auto md:mx-0"></i>
                 <h2 class="font-serif text-3xl md:text-4xl text-white mb-4 md:mb-5 leading-tight">
-                    Reserve sua noite <br class="block md:hidden"><span class="text-amber-500 italic font-light">sob as estrelas</span>
+                    Reserve sua noite <br class="block md:hidden"><span class="text-[#d4af37] italic font-light">sob as estrelas</span>
                 </h2>
                 <p class="text-slate-400 text-xs md:text-[13px] leading-relaxed mb-8">
                     Escolha suas datas e fale direto com o Maico pelo WhatsApp — resposta em até 1 hora. Prefere o Airbnb? Os calendários são sincronizados.
                 </p>
                 
-                <a href="#" class="bg-amber-500/10 hover:bg-amber-500 text-amber-500 hover:text-slate-900 border border-amber-500/50 hover:border-amber-500 font-medium rounded-full px-6 py-2.5 inline-flex items-center justify-center gap-2 transition-colors w-full sm:w-auto text-[13px] tracking-wide">
+                <a href="#" class="bg-[#d4af37]/10 hover:bg-[#d4af37] text-[#d4af37] hover:text-slate-900 border border-[#d4af37]/50 hover:border-[#d4af37] font-medium rounded-full px-6 py-2.5 inline-flex items-center justify-center gap-2 transition-colors w-full sm:w-auto text-[13px] tracking-wide">
                     Reservar pelo Airbnb
                 </a>
             </div>
 
+            <!-- Coluna da Direita (Formulário WhatsApp) -->
             <div class="bg-[#0a0f18]/60 backdrop-blur-md p-6 md:p-8 rounded-2xl border border-white/5 shadow-2xl">
+                
+                <!-- Novo Cabeçalho do Formulário -->
+                <div class="mb-6 pb-5 border-b border-white/5">
+                    <h3 class="font-serif text-xl md:text-2xl text-white mb-2">Verifique a disponibilidade</h3>
+                    <p class="text-slate-400 text-[12px] leading-relaxed">
+                        Preencha os dados abaixo para tirar dúvidas sobre as datas diretamente no WhatsApp.
+                    </p>
+                </div>
+
                 <form class="relative z-10" onsubmit="event.preventDefault();">
                     <div class="mb-4">
                         <label class="block text-[10px] md:text-[11px] text-slate-400 mb-1.5 ml-1 uppercase tracking-wide">Seu nome</label>
-                        <input type="text" class="w-full bg-transparent border border-slate-700/60 rounded-xl p-3 text-white focus:border-amber-500 focus:ring-1 focus:ring-amber-500 outline-none transition-colors text-sm" required>
+                        <input type="text" class="w-full bg-transparent border border-slate-700/60 rounded-xl p-3 text-white focus:border-[#d4af37] focus:ring-1 focus:ring-[#d4af37] outline-none transition-colors text-sm" required>
                     </div>
 
                     <div class="flex flex-col sm:flex-row gap-4 mb-4">
                         <div class="w-full">
                             <label class="block text-[10px] md:text-[11px] text-slate-400 mb-1.5 ml-1 uppercase tracking-wide">Check-in</label>
-                            <input type="date" class="w-full bg-transparent border border-slate-700/60 rounded-xl p-3 text-slate-300 focus:border-amber-500 focus:ring-1 focus:ring-amber-500 outline-none transition-colors [color-scheme:dark] text-sm" required>
+                            <input type="date" class="w-full bg-transparent border border-slate-700/60 rounded-xl p-3 text-slate-300 focus:border-[#d4af37] focus:ring-1 focus:ring-[#d4af37] outline-none transition-colors [color-scheme:dark] text-sm" required>
                         </div>
                         <div class="w-full">
                             <label class="block text-[10px] md:text-[11px] text-slate-400 mb-1.5 ml-1 uppercase tracking-wide">Check-out</label>
-                            <input type="date" class="w-full bg-transparent border border-slate-700/60 rounded-xl p-3 text-slate-300 focus:border-amber-500 focus:ring-1 focus:ring-amber-500 outline-none transition-colors [color-scheme:dark] text-sm" required>
+                            <input type="date" class="w-full bg-transparent border border-slate-700/60 rounded-xl p-3 text-slate-300 focus:border-[#d4af37] focus:ring-1 focus:ring-[#d4af37] outline-none transition-colors [color-scheme:dark] text-sm" required>
                         </div>
                     </div>
 
                     <div class="mb-5">
                         <label class="block text-[10px] md:text-[11px] text-slate-400 mb-1.5 ml-1 uppercase tracking-wide">Hóspedes</label>
-                        <select class="w-full bg-[#0a0f18]/80 border border-slate-700/60 rounded-xl p-3 text-white focus:border-amber-500 focus:ring-1 focus:ring-amber-500 outline-none transition-colors appearance-none text-sm">
+                        <select class="w-full bg-[#0a0f18]/80 border border-slate-700/60 rounded-xl p-3 text-white focus:border-[#d4af37] focus:ring-1 focus:ring-[#d4af37] outline-none transition-colors appearance-none text-sm">
                             <option value="1">1 hóspede</option>
                             <option value="2" selected>2 hóspedes</option>
                             <option value="3">3 hóspedes</option>
@@ -499,7 +510,7 @@
                     </div>
 
                     <div class="mb-6 flex items-start sm:items-center gap-2.5 ml-1">
-                        <input type="checkbox" id="pet" class="w-3.5 h-3.5 rounded border-slate-600 text-amber-500 focus:ring-amber-500 bg-transparent accent-amber-500 cursor-pointer mt-0.5 sm:mt-0">
+                        <input type="checkbox" id="pet" class="w-3.5 h-3.5 rounded border-slate-600 text-[#d4af37] focus:ring-[#d4af37] bg-transparent accent-[#d4af37] cursor-pointer mt-0.5 sm:mt-0">
                         <label for="pet" class="text-xs md:text-[13px] text-slate-300 cursor-pointer select-none leading-tight">
                             Vou levar pet de pequeno porte
                         </label>
