@@ -161,23 +161,24 @@
         <!-- Background -->
         <div class="absolute inset-0 z-0">
             <img src="estrelas.jpg" alt="Céu estrelado" class="w-full h-full object-cover" />
-            <!-- Overlay escuro uniforme para destacar o card central -->
-            <div class="absolute inset-0 bg-slate-900/60"></div>
+            <!-- Overlay escuro mais suave para não esconder muito as estrelas -->
+            <div class="absolute inset-0 bg-slate-900/40"></div>
         </div>
 
         <div class="relative z-10 max-w-7xl mx-auto px-6 flex justify-center">
-            <!-- Card centralizado com texto e ícone alinhados ao meio -->
-            <div class="bg-[#121826]/90 backdrop-blur-xl border border-slate-700/60 p-10 rounded-3xl max-w-2xl shadow-2xl transform transition hover:-translate-y-2 duration-500 flex flex-col items-center text-center">
-                <div class="w-14 h-14 bg-amber-500/10 rounded-2xl flex items-center justify-center mb-6">
+            <!-- Card menor (max-w-lg) e semitransparente (bg-slate-900/40 com backdrop-blur-md) -->
+            <div class="bg-slate-900/40 backdrop-blur-md border border-white/10 p-8 rounded-3xl max-w-lg shadow-2xl transform transition hover:-translate-y-2 duration-500 flex flex-col items-center text-center">
+                <div class="w-14 h-14 bg-amber-500/20 rounded-2xl flex items-center justify-center mb-6 border border-amber-500/30">
                     <i data-lucide="telescope" class="w-7 h-7 text-amber-500"></i>
                 </div>
-                <h3 class="font-serif text-3xl md:text-4xl text-white mb-4 leading-tight">As estrelas não estão só no nome</h3>
-                <p class="text-slate-300 leading-relaxed text-lg">
+                <h3 class="font-serif text-3xl text-white mb-4 leading-tight">As estrelas não estão só no nome</h3>
+                <p class="text-slate-200 leading-relaxed">
                     Maratá possui um dos céus mais limpos da região. Disponibilizamos um telescópio profissional para que você possa observar a lua, os planetas e se perder na imensidão da via láctea do conforto do nosso deck.
                 </p>
             </div>
         </div>
     </section>
+    
     <!-- 6. Comodidades -->
     <section id="comodidades" class="py-24 max-w-7xl mx-auto px-6">
         <div class="text-center mb-16">
