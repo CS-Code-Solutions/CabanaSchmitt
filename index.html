@@ -156,26 +156,31 @@
             <h2 class="font-serif text-3xl text-white mb-2 font-medium">Galeria</h2>
         </div>
 
-        <!-- Adicionado max-w-5xl mx-auto para criar margens laterais elegantes e reduzida a altura para 400px -->
         <div class="max-w-5xl mx-auto">
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 h-auto md:h-[400px]">
-                <div class="md:col-span-2 h-64 md:h-full group overflow-hidden rounded-xl relative">
+            <!-- Altura aumentada para 500px e grelha de 12 colunas para melhor controlo -->
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-5 h-auto md:h-[500px]">
+                
+                <!-- Imagem Esquerda: Ocupa 7 colunas (proporção um pouco mais equilibrada) -->
+                <div class="md:col-span-7 h-72 md:h-full group overflow-hidden rounded-2xl relative">
                     <img src="1 (2).jpeg" alt="Vista exterior da cabana" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
                     <div class="absolute inset-0 bg-black/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 </div>
                 
-                <div class="flex flex-col gap-4 h-full">
-                    <div class="h-48 md:h-1/2 group overflow-hidden rounded-xl relative w-full">
+                <!-- Imagens Direita: Ocupam 5 colunas -->
+                <div class="md:col-span-5 flex flex-col gap-5 h-full">
+                    <!-- flex-1 faz com que dividam a altura exatamente a meio -->
+                    <div class="flex-1 group overflow-hidden rounded-2xl relative w-full h-48 md:h-auto">
                         <img src="1 (5).jpeg" alt="Banheira de hidromassagem" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
                     </div>
-                    <div class="h-48 md:h-1/2 group overflow-hidden rounded-xl relative w-full">
+                    <div class="flex-1 group overflow-hidden rounded-2xl relative w-full h-48 md:h-auto">
                         <img src="1 (7).jpeg" alt="Interior aconchegante" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
-
+   
     <!-- 5. Telescópio Banner -->
     <section class="relative py-24 my-10 overflow-hidden">
         <div class="absolute inset-0 z-0">
