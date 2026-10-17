@@ -150,30 +150,29 @@
         </div>
     </section>
 
-    <!-- 4. Galeria -->
+   <!-- 4. Galeria -->
     <section id="galeria" class="py-20 max-w-7xl mx-auto px-6 border-t border-white/5">
-        <div class="text-center mb-10">
-            <h2 class="font-serif text-3xl text-white mb-2 font-medium">Galeria</h2>
-        </div>
-
         <div class="max-w-5xl mx-auto">
-            <!-- Altura aumentada para 500px e grelha de 12 colunas para melhor controlo -->
-            <div class="grid grid-cols-1 md:grid-cols-12 gap-5 h-auto md:h-[500px]">
+            <!-- Divisão de 50/50 exata com grid-cols-2 e altura fixada em 550px para desktop -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 h-auto md:h-[550px]">
                 
-                <!-- Imagem Esquerda: Ocupa 7 colunas (proporção um pouco mais equilibrada) -->
-                <div class="md:col-span-7 h-72 md:h-full group overflow-hidden rounded-2xl relative">
-                    <img src="1 (2).jpeg" alt="Vista exterior da cabana" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                <!-- Imagem Esquerda Grande -->
+                <div class="w-full h-[350px] md:h-full overflow-hidden rounded-2xl relative group shadow-xl">
+                    <img src="1 (2).jpeg" alt="Exterior da cabana de dia" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
                     <div class="absolute inset-0 bg-black/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 </div>
                 
-                <!-- Imagens Direita: Ocupam 5 colunas -->
-                <div class="md:col-span-5 flex flex-col gap-5 h-full">
-                    <!-- flex-1 faz com que dividam a altura exatamente a meio -->
-                    <div class="flex-1 group overflow-hidden rounded-2xl relative w-full h-48 md:h-auto">
-                        <img src="1 (6).jpeg" alt="Banheira de hidromassagem" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                <!-- Coluna Direita (2 Imagens Empilhadas) -->
+                <div class="flex flex-col gap-4 h-full">
+                    <!-- Imagem Superior Direita -->
+                    <div class="flex-1 w-full h-[250px] md:h-auto overflow-hidden rounded-2xl relative group shadow-xl">
+                        <img src="1 (6).jpg" alt="Banheira de hidromassagem de dia" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                        <div class="absolute inset-0 bg-black/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                     </div>
-                    <div class="flex-1 group overflow-hidden rounded-2xl relative w-full h-48 md:h-auto">
-                        <img src="1 (7).jpeg" alt="Interior aconchegante" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                    <!-- Imagem Inferior Direita -->
+                    <div class="flex-1 w-full h-[250px] md:h-auto overflow-hidden rounded-2xl relative group shadow-xl">
+                        <img src="1 (7).jpg" alt="Vista do mezanino" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                        <div class="absolute inset-0 bg-black/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                     </div>
                 </div>
 
