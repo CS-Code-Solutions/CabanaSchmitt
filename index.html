@@ -320,15 +320,18 @@
                 </div>
             </div>
 
-            <div class="relative w-full h-80 md:h-[400px] rounded-3xl overflow-hidden shadow-2xl border border-slate-700/50 group">
-                <!-- Imagem do mapa de fundo -->
-                <img src="https://images.unsplash.com/photo-1524661135-423995f22d0b?q=80&w=1000&auto=format&fit=crop" alt="Mapa da região" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 opacity-80" />
-                <div class="absolute inset-0 bg-slate-900/20"></div>
-                
-                <!-- Ícone do pino -->
-                <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-amber-500">
-                    <i data-lucide="map-pin" class="w-10 h-10 drop-shadow-lg fill-amber-500/20"></i>
-                </div>
+            <div class="relative w-full h-80 md:h-[400px] rounded-3xl overflow-hidden shadow-2xl border border-slate-700/50">
+                <!-- Mapa interativo do Google Maps embebido (iframe) -->
+                <iframe 
+                    src="https://maps.google.com/maps?q=-29.5225836,-51.5421542&z=15&output=embed" 
+                    width="100%" 
+                    height="100%" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade"
+                    class="w-full h-full grayscale-[20%] contrast-[110%] opacity-90 transition-opacity hover:opacity-100 hover:grayscale-0">
+                </iframe>
 
                 <!-- Botão com o link correto do Google Maps -->
                 <a href="https://www.google.com/maps/place/Cabana+Schmitt/@-29.5225789,-51.5447291,17z/data=!3m1!4b1!4m6!3m5!1s0x951c0900618431d3:0x4bd1b7e2a6b74822!8m2!3d-29.5225836!4d-51.5421542!16s%2Fg%2F11y4zzs4jf?hl=pt-BR&entry=ttu&g_ep=EgoyMDI2MTAxMy4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer" class="absolute bottom-6 right-6 bg-white hover:bg-slate-100 text-slate-900 rounded-full px-5 py-2.5 flex items-center gap-2 font-semibold shadow-xl transition-transform hover:-translate-y-1">
