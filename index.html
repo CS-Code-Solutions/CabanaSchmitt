@@ -529,27 +529,42 @@
     </section>
 
 <!-- 10. Footer -->
-    <footer class="max-w-7xl mx-auto px-6 border-t border-white/5 py-10 text-center flex flex-col items-center gap-1.5">
+    <footer class="max-w-7xl mx-auto px-6 border-t border-white/5 py-10 flex flex-col items-center relative">
         
-        <!-- Botão Instagram -->
-        <a href="https://www.instagram.com/pousadacabanaschmitt?psln=MXRrMmJoMWRzZ2NiZw%3D%3D" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center w-8 h-8 rounded-full bg-gradient-to-tr from-[#f09433] via-[#e6683c] to-[#bc1888] text-white hover:scale-110 transition-transform mb-3 shadow-lg shadow-pink-500/20">
-            <i data-lucide="instagram" class="w-4 h-4"></i>
-        </a>
+        <!-- Conteúdo Principal do Footer (Sem o círculo rosa) -->
+        <div class="text-center flex flex-col items-center gap-1.5 mb-6">
+            <p class="text-slate-300 font-serif font-medium text-[15px]">
+                Cabana Schmitt — Vista das Estrelas
+            </p>
+            <p class="text-slate-500 text-[11px] tracking-wide uppercase">
+                Esperança · Maratá/RS · Anfitrião: Maico
+            </p>
+        </div>
+        
+        <!-- Linha divisória fina e de cor escura -->
+        <div class="w-full h-[1px] bg-white/5 mb-6"></div>
+        
+        <!-- Rodapé Inferior: Flexbox para alinhar assinatura à esquerda e ícones no canto direito -->
+        <div class="w-full flex flex-col md:flex-row items-center justify-between gap-4">
+            
+            <!-- Assinatura/Copyright -->
+            <p class="text-slate-600 text-[10px] tracking-wider uppercase order-2 md:order-1 text-center md:text-left">
+                © 2026 Laser Expert | Powered by <a href="https://www.instagram.com/cs_code_solutions?exln=Ym1mNDMzYTYxa3d6" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-[#d4af37] transition-colors font-medium">CS Code Solutions</a>
+            </p>
 
-        <p class="text-slate-300 font-serif font-medium text-[15px]">
-            Cabana Schmitt — Vista das Estrelas
-        </p>
-        <p class="text-slate-500 text-[11px] tracking-wide uppercase mb-4">
-            Esperança · Maratá/RS · Anfitrião: Maico
-        </p>
-        
-        <!-- Pequena linha divisória elegante -->
-        <div class="w-12 h-[1px] bg-white/10 mb-4"></div>
-        
-        <!-- Assinatura -->
-        <p class="text-slate-600 text-[10px] tracking-wider uppercase">
-            © 2026 Laser Expert | Powered by <a href="https://www.instagram.com/cs_code_solutions?exln=Ym1mNDMzYTYxa3d6" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-[#d4af37] transition-colors font-medium">CS Code Solutions</a>
-        </p>
+            <!-- Ícones Sociais Discretos no canto direito -->
+            <div class="flex items-center gap-3 order-1 md:order-2">
+                <!-- Instagram (Com efeito hover usando as cores da marca) -->
+                <a href="https://www.instagram.com/pousadacabanaschmitt?psln=MXRrMmJoMWRzZ2NiZw%3D%3D" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center w-8 h-8 rounded-full bg-white/5 hover:bg-gradient-to-tr hover:from-[#f09433] hover:via-[#e6683c] hover:to-[#bc1888] text-slate-400 hover:text-white transition-all" title="Instagram Cabana Schmitt">
+                    <i data-lucide="instagram" class="w-4 h-4"></i>
+                </a>
+                <!-- WhatsApp -->
+                <a href="https://wa.me/5551999999999" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center w-8 h-8 rounded-full bg-white/5 hover:bg-[#25d366] text-slate-400 hover:text-white transition-all" title="Falar no WhatsApp">
+                    <i data-lucide="message-circle" class="w-4 h-4"></i>
+                </a>
+            </div>
+
+        </div>
     </footer>
     <!-- Initialize Icons -->
     <script>
