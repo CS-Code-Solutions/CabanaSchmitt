@@ -37,6 +37,7 @@
             </a>
             
             <div class="hidden md:flex items-center space-x-8 text-sm font-medium">
+                <a href="#refugio" class="hover:text-amber-500 transition-colors">O Refúgio</a>
                 <a href="#galeria" class="hover:text-amber-500 transition-colors">Galeria</a>
                 <a href="#comodidades" class="hover:text-amber-500 transition-colors">Comodidades</a>
                 <a href="#avaliacoes" class="hover:text-amber-500 transition-colors">Avaliações</a>
@@ -50,28 +51,31 @@
     </nav>
 
     <!-- 2. Hero Section -->
-    <header class="relative h-screen min-h-[600px] flex items-center pt-20">
+    <header class="relative h-screen min-h-[600px] flex items-center justify-center pt-20">
+        <!-- Background Image with Overlay ajustado para gradiente -->
         <div class="absolute inset-0 z-0">
-            <img src="img/1 (3).jpg" alt="Cabana Schmitt ao anoitecer" class="w-full h-full object-cover" />
-            <div class="absolute inset-0 bg-gradient-to-r from-slate-900/90 via-slate-900/50 to-transparent"></div>
-            <div class="absolute inset-0 bg-gradient-to-t from-[#0f172a] via-transparent to-transparent"></div>
+            <img src="img/interior.jpg" alt="Interior da Cabana Schmitt" class="w-full h-full object-cover" />
+            <div class="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-[#0f172a]"></div>
         </div>
 
-        <div class="relative z-10 px-6 max-w-7xl mx-auto w-full flex flex-col items-start mt-10">
-            <div class="inline-flex items-center gap-2 text-amber-500 text-xs font-bold tracking-widest mb-6 drop-shadow-md uppercase">
-                <i data-lucide="star" class="w-4 h-4 fill-amber-500"></i>
-                5,0 · 32 Avaliações · Preferido dos hóspedes
+        <!-- Content -->
+        <div class="relative z-10 text-center px-6 max-w-4xl mx-auto flex flex-col items-center mt-10">
+            <div class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md border border-white/20 text-white px-4 py-1.5 rounded-full text-xs font-semibold tracking-wider mb-8 drop-shadow-md">
+                <i data-lucide="star" class="w-4 h-4 text-amber-500 fill-amber-500"></i>
+                5,0 · 32 AVALIAÇÕES · PREFERIDO DOS HÓSPEDES
             </div>
             
-            <h1 class="font-serif text-5xl md:text-7xl text-white font-semibold leading-tight mb-6 drop-shadow-xl max-w-3xl">
-                Um céu todinho <span class="text-amber-500 italic font-light">só pra<br>vocês</span>
+            <!-- Sombra adicionada ao texto para maior legibilidade -->
+            <h1 class="font-serif text-5xl md:text-7xl text-white font-semibold leading-tight mb-6 drop-shadow-xl">
+                Um céu todinho <br class="hidden md:block"> só pra vocês
             </h1>
             
             <p class="text-lg md:text-xl text-slate-200 mb-10 max-w-2xl font-light drop-shadow-md">
-                Refúgio romântico em Esperança, interior de Maratá/RS. Hidromassagem, telescópio e uma varanda com vista para as estrelas.
+                Desconecte-se da rotina e venha viver momentos inesquecíveis no nosso refúgio exclusivo em meio à natureza de Maratá/RS.
             </p>
 
-            <div class="flex flex-col sm:flex-row gap-4 items-center justify-start w-full sm:w-auto">
+            <div class="flex flex-col sm:flex-row gap-4 items-center justify-center w-full">
+                <!-- Ícone Real do WhatsApp Adicionado -->
                 <a href="#reservar" class="bg-green-600 hover:bg-green-500 text-white font-medium px-8 py-3.5 rounded-full transition-all flex items-center gap-2 w-full sm:w-auto justify-center shadow-lg shadow-green-900/50">
                     <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
                     Reservar pelo WhatsApp
@@ -81,82 +85,327 @@
                 </a>
             </div>
         </div>
+        
+        <!-- Scroll Down Indicator -->
+        <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce z-10">
+            <a href="#refugio" class="text-white/70 hover:text-white transition-colors">
+                <i data-lucide="chevron-down" class="w-8 h-8"></i>
+            </a>
+        </div>
     </header>
 
-    <!-- 3 a 8 Omitidos na visualização mas presentes para o código final continuar igual -->
-    <!-- (Pode manter as suas secções de Refúgio, Galeria, Comodidades, etc. aqui no meio caso eu tenha apagado alguma nesta versão condensada) -->
+    <!-- 3. O Refúgio -->
+    <section id="refugio" class="py-24 max-w-7xl mx-auto px-6">
+        <div class="grid md:grid-cols-2 gap-16 items-center">
+            <div>
+                <span class="text-amber-500 uppercase tracking-[0.2em] text-xs font-semibold">O Refúgio</span>
+                <h2 class="font-serif text-3xl md:text-4xl text-white mt-4 mb-6 leading-snug">Conforto moderno, charme do campo</h2>
+                
+                <p class="text-slate-400 leading-relaxed mb-8">
+                    A Cabana Schmitt foi pensada em cada detalhe para oferecer uma experiência acolhedora e intimista. Nossa arquitetura estilo A-Frame combina o rústico da madeira com comodidades de alto padrão, perfeita para casais em busca de romance ou pequenas famílias procurando paz.
+                </p>
 
-    <!-- 9. Reservar Recriado -->
-    <section id="reservar" class="py-24 max-w-7xl mx-auto px-6 border-t border-slate-800/50 mt-16">
+                <div class="flex flex-wrap gap-8 text-sm text-slate-300 border-t border-slate-800 pt-8">
+                    <div class="flex items-center gap-3">
+                        <i data-lucide="users" class="w-5 h-5 text-amber-500"></i>
+                        <span>Até 4 hóspedes</span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <i data-lucide="bed-double" class="w-5 h-5 text-amber-500"></i>
+                        <span>1 Quarto (Mezanino)</span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <i data-lucide="bath" class="w-5 h-5 text-amber-500"></i>
+                        <span>1 Banheiro</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="relative">
+                <div class="absolute -inset-4 bg-slate-800/50 rounded-[2rem] transform rotate-3 -z-10"></div>
+                <img src="https://images.unsplash.com/photo-1510798831971-661eb04b3739?q=80&w=1000&auto=format&fit=crop" alt="Interior da cabana" class="w-full rounded-2xl object-cover shadow-2xl aspect-[4/3] md:aspect-auto md:h-[500px]" />
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Galeria -->
+    <section id="galeria" class="py-24 max-w-7xl mx-auto px-6 border-t border-slate-800/50">
+        <div class="text-center mb-12">
+            <h2 class="font-serif text-4xl text-white mb-4">Galeria</h2>
+            <p class="text-slate-400 max-w-2xl mx-auto">Explore os cantinhos especiais que preparamos para você.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 h-auto md:h-[600px]">
+            <!-- Large Image (Left) -->
+            <div class="md:col-span-2 h-72 md:h-full group overflow-hidden rounded-2xl relative">
+                <img src="https://images.unsplash.com/photo-1449844908441-8829872d2607?q=80&w=1200&auto=format&fit=crop" alt="Vista exterior" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                <div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            </div>
+            
+            <!-- Small Images Stack (Right) -->
+            <div class="flex flex-col gap-4 h-full">
+                <div class="h-64 md:h-1/2 group overflow-hidden rounded-2xl relative w-full">
+                    <img src="https://images.unsplash.com/photo-1587061949409-02df41d5e562?q=80&w=800&auto=format&fit=crop" alt="Banheira de hidromassagem" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                </div>
+                <div class="h-64 md:h-1/2 group overflow-hidden rounded-2xl relative w-full">
+                    <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=800&auto=format&fit=crop" alt="Cozinha e sala" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Telescópio Banner -->
+    <section class="relative py-32 mt-12 overflow-hidden">
+        <!-- Background -->
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1513628253939-010e64ac66cd?q=80&w=2000&auto=format&fit=crop" alt="Céu estrelado" class="w-full h-full object-cover" />
+            <div class="absolute inset-0 bg-gradient-to-r from-slate-900 via-slate-900/80 to-transparent"></div>
+        </div>
+
+        <div class="relative z-10 max-w-7xl mx-auto px-6">
+            <div class="bg-slate-800/80 backdrop-blur-xl border border-slate-700 p-10 rounded-3xl max-w-lg shadow-2xl transform transition hover:-translate-y-2 duration-500">
+                <div class="w-14 h-14 bg-amber-500/10 rounded-2xl flex items-center justify-center mb-6">
+                    <i data-lucide="telescope" class="w-7 h-7 text-amber-500"></i>
+                </div>
+                <h3 class="font-serif text-3xl text-white mb-4 leading-tight">As estrelas não estão só no nome</h3>
+                <p class="text-slate-300 leading-relaxed">
+                    Maratá possui um dos céus mais limpos da região. Disponibilizamos um telescópio profissional para que você possa observar a lua, os planetas e se perder na imensidão da via láctea do conforto do nosso deck.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. Comodidades -->
+    <section id="comodidades" class="py-24 max-w-7xl mx-auto px-6">
+        <div class="text-center mb-16">
+            <h2 class="font-serif text-4xl text-white mb-4">Comodidades</h2>
+            <p class="text-slate-400 max-w-2xl mx-auto">Tudo que você precisa para uma estadia impecável e sem preocupações.</p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+            <!-- Cards -->
+            <div class="bg-slate-800/60 p-5 rounded-2xl flex items-center gap-4 border border-slate-700/50 hover:border-amber-500/50 hover:bg-slate-800 transition-all group">
+                <i data-lucide="waves" class="w-6 h-6 text-amber-500 group-hover:scale-110 transition-transform"></i>
+                <span class="font-medium text-slate-200">Hidromassagem</span>
+            </div>
+            <div class="bg-slate-800/60 p-5 rounded-2xl flex items-center gap-4 border border-slate-700/50 hover:border-amber-500/50 hover:bg-slate-800 transition-all group">
+                <i data-lucide="telescope" class="w-6 h-6 text-amber-500 group-hover:scale-110 transition-transform"></i>
+                <span class="font-medium text-slate-200">Telescópio</span>
+            </div>
+            <div class="bg-slate-800/60 p-5 rounded-2xl flex items-center gap-4 border border-slate-700/50 hover:border-amber-500/50 hover:bg-slate-800 transition-all group">
+                <i data-lucide="wifi" class="w-6 h-6 text-amber-500 group-hover:scale-110 transition-transform"></i>
+                <span class="font-medium text-slate-200">Wi-Fi Starlink</span>
+            </div>
+            <div class="bg-slate-800/60 p-5 rounded-2xl flex items-center gap-4 border border-slate-700/50 hover:border-amber-500/50 hover:bg-slate-800 transition-all group">
+                <i data-lucide="dog" class="w-6 h-6 text-amber-500 group-hover:scale-110 transition-transform"></i>
+                <span class="font-medium text-slate-200">Pet friendly</span>
+            </div>
+            <div class="bg-slate-800/60 p-5 rounded-2xl flex items-center gap-4 border border-slate-700/50 hover:border-amber-500/50 hover:bg-slate-800 transition-all group">
+                <i data-lucide="wind" class="w-6 h-6 text-amber-500 group-hover:scale-110 transition-transform"></i>
+                <span class="font-medium text-slate-200">Ar condicionado</span>
+            </div>
+            <div class="bg-slate-800/60 p-5 rounded-2xl flex items-center gap-4 border border-slate-700/50 hover:border-amber-500/50 hover:bg-slate-800 transition-all group">
+                <i data-lucide="flame" class="w-6 h-6 text-amber-500 group-hover:scale-110 transition-transform"></i>
+                <span class="font-medium text-slate-200">Lareira interna</span>
+            </div>
+            <div class="bg-slate-800/60 p-5 rounded-2xl flex items-center gap-4 border border-slate-700/50 hover:border-amber-500/50 hover:bg-slate-800 transition-all group">
+                <i data-lucide="chef-hat" class="w-6 h-6 text-amber-500 group-hover:scale-110 transition-transform"></i>
+                <span class="font-medium text-slate-200">Cozinha completa</span>
+            </div>
+            <div class="bg-slate-800/60 p-5 rounded-2xl flex items-center gap-4 border border-slate-700/50 hover:border-amber-500/50 hover:bg-slate-800 transition-all group">
+                <i data-lucide="utensils-crossed" class="w-6 h-6 text-amber-500 group-hover:scale-110 transition-transform"></i>
+                <span class="font-medium text-slate-200">Churrasqueira</span>
+            </div>
+            <div class="bg-slate-800/60 p-5 rounded-2xl flex items-center gap-4 border border-slate-700/50 hover:border-amber-500/50 hover:bg-slate-800 transition-all group">
+                <i data-lucide="tent-tree" class="w-6 h-6 text-amber-500 group-hover:scale-110 transition-transform"></i>
+                <span class="font-medium text-slate-200">Fogo de chão</span>
+            </div>
+            <div class="bg-slate-800/60 p-5 rounded-2xl flex items-center gap-4 border border-slate-700/50 hover:border-amber-500/50 hover:bg-slate-800 transition-all group">
+                <i data-lucide="car" class="w-6 h-6 text-amber-500 group-hover:scale-110 transition-transform"></i>
+                <span class="font-medium text-slate-200">Estacionamento</span>
+            </div>
+            <div class="bg-slate-800/60 p-5 rounded-2xl flex items-center gap-4 border border-slate-700/50 hover:border-amber-500/50 hover:bg-slate-800 transition-all group">
+                <i data-lucide="tv" class="w-6 h-6 text-amber-500 group-hover:scale-110 transition-transform"></i>
+                <span class="font-medium text-slate-200">Smart TV</span>
+            </div>
+            <div class="bg-slate-800/60 p-5 rounded-2xl flex items-center gap-4 border border-slate-700/50 hover:border-amber-500/50 hover:bg-slate-800 transition-all group">
+                <i data-lucide="bed" class="w-6 h-6 text-amber-500 group-hover:scale-110 transition-transform"></i>
+                <span class="font-medium text-slate-200">Roupas de cama</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. Avaliações -->
+    <section id="avaliacoes" class="py-24 max-w-7xl mx-auto px-6 border-t border-slate-800/50">
+        <div class="text-center mb-16">
+            <div class="flex items-center justify-center gap-1.5 mb-4">
+                <i data-lucide="star" class="w-8 h-8 text-amber-500 fill-amber-500"></i>
+                <i data-lucide="star" class="w-8 h-8 text-amber-500 fill-amber-500"></i>
+                <i data-lucide="star" class="w-8 h-8 text-amber-500 fill-amber-500"></i>
+                <i data-lucide="star" class="w-8 h-8 text-amber-500 fill-amber-500"></i>
+                <i data-lucide="star" class="w-8 h-8 text-amber-500 fill-amber-500"></i>
+            </div>
+            <h2 class="font-serif text-5xl text-white font-semibold">5,0</h2>
+            <p class="text-amber-500 text-sm tracking-widest uppercase mt-4 font-medium">Perfeito no Airbnb</p>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-8 text-left max-w-5xl mx-auto">
+            <div class="bg-slate-800/40 p-8 rounded-3xl border border-slate-700/50 relative">
+                <i data-lucide="quote" class="w-12 h-12 text-slate-700 absolute top-6 right-6 opacity-30"></i>
+                <p class="text-slate-300 leading-relaxed mb-8 italic">
+                    "Lugar maravilhoso! A cabana é ainda mais bonita pessoalmente, com todos os detalhes pensados com muito carinho. O telescópio foi a cereja do bolo, conseguimos ver a lua com perfeição. Voltaremos com certeza!"
+                </p>
+                <div class="flex items-center gap-4">
+                    <div class="w-12 h-12 bg-slate-700 rounded-full flex items-center justify-center font-bold text-white">R</div>
+                    <div>
+                        <h4 class="text-white font-medium">Roberto Carlos</h4>
+                        <span class="text-slate-500 text-sm">Outubro 2026</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-slate-800/40 p-8 rounded-3xl border border-slate-700/50 relative">
+                <i data-lucide="quote" class="w-12 h-12 text-slate-700 absolute top-6 right-6 opacity-30"></i>
+                <p class="text-slate-300 leading-relaxed mb-8 italic">
+                    "Experiência incrível. A banheira com vista para a natureza é super relaxante. A cama é super confortável e o clima do lugar é indescritível. Levar nosso doguinho fez tudo ficar ainda mais especial."
+                </p>
+                <div class="flex items-center gap-4">
+                    <div class="w-12 h-12 bg-slate-700 rounded-full flex items-center justify-center font-bold text-white">C</div>
+                    <div>
+                        <h4 class="text-white font-medium">Célia Tavares</h4>
+                        <span class="text-slate-500 text-sm">Setembro 2026</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center mt-12">
+            <a href="#" class="inline-block border border-slate-600 hover:bg-slate-800 text-slate-300 font-medium rounded-full px-8 py-3 transition-colors">
+                Ver todas as avaliações no Airbnb
+            </a>
+        </div>
+    </section>
+
+    <!-- 8. Localização -->
+    <section id="localizacao" class="py-24 max-w-7xl mx-auto px-6 border-t border-slate-800/50">
+        <div class="grid md:grid-cols-2 gap-16 items-center">
+            <div>
+                <span class="text-amber-500 uppercase tracking-[0.2em] text-xs font-semibold">Localização</span>
+                <h2 class="font-serif text-4xl text-white mt-4 mb-6">Esperança, Maratá/RS</h2>
+                <p class="text-slate-400 leading-relaxed mb-8">
+                    Nossa cabana está localizada em uma propriedade rural privada e segura, cercada por mata nativa, proporcionando total privacidade e imersão na natureza, mas de fácil acesso.
+                </p>
+
+                <div class="grid grid-cols-2 gap-6 bg-slate-800/30 p-6 rounded-2xl border border-slate-700/50">
+                    <div class="flex flex-col">
+                        <span class="text-white font-medium">Porto Alegre</span>
+                        <span class="text-slate-400 text-sm">~ 1h 20min</span>
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="text-white font-medium">Novo Hamburgo</span>
+                        <span class="text-slate-400 text-sm">~ 50min</span>
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="text-white font-medium">Caxias do Sul</span>
+                        <span class="text-slate-400 text-sm">~ 1h 30min</span>
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="text-white font-medium">Centro de Maratá</span>
+                        <span class="text-slate-400 text-sm">10min</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="relative w-full h-80 md:h-[400px] rounded-3xl overflow-hidden shadow-2xl border border-slate-700/50 group">
+                <!-- Map Placeholder Image -->
+                <img src="https://images.unsplash.com/photo-1524661135-423995f22d0b?q=80&w=1000&auto=format&fit=crop" alt="Mapa" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 opacity-80" />
+                <div class="absolute inset-0 bg-slate-900/20"></div>
+                
+                <!-- Pin marker -->
+                <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-amber-500">
+                    <i data-lucide="map-pin" class="w-10 h-10 drop-shadow-lg fill-amber-500/20"></i>
+                </div>
+
+                <a href="#" class="absolute bottom-6 right-6 bg-white hover:bg-slate-100 text-slate-900 rounded-full px-5 py-2.5 flex items-center gap-2 font-semibold shadow-xl transition-transform hover:-translate-y-1">
+                    <i data-lucide="navigation" class="w-4 h-4"></i>
+                    Abrir no Maps
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 9. Reservar -->
+    <section id="reservar" class="py-24 max-w-7xl mx-auto px-6 border-t border-slate-800/50">
         <div class="grid md:grid-cols-2 gap-16 items-start">
             <div class="sticky top-32">
-                <i data-lucide="calendar-heart" class="w-8 h-8 text-amber-500 mb-6"></i>
-                <h2 class="font-serif text-5xl text-white mb-6 leading-tight">
-                    Reserve sua noite <span class="text-amber-500 italic font-light">sob as estrelas</span>
-                </h2>
-                <p class="text-slate-400 text-lg mb-10 max-w-md">
-                    Escolha suas datas e fale direto com o Maico pelo WhatsApp — resposta em até 1 hora. Prefere o Airbnb? Os calendários são sincronizados.
+                <h2 class="font-serif text-5xl text-white mb-6 leading-tight">Reserve sua noite sob as estrelas</h2>
+                <p class="text-slate-400 text-lg mb-10">
+                    Escolha a melhor plataforma para você. Faça sua reserva instantânea pelo Airbnb ou converse diretamente connosco pelo WhatsApp.
                 </p>
                 
-                <a href="#" class="bg-amber-500/20 hover:bg-amber-500 text-amber-500 hover:text-slate-900 border border-amber-500 font-medium rounded-full px-8 py-3 inline-flex items-center gap-3 transition-colors w-full md:w-auto justify-center text-sm tracking-wide">
+                <a href="#" class="bg-[#FF5A5F] hover:bg-[#E54B4F] text-white font-medium rounded-full px-8 py-4 inline-flex items-center gap-3 transition-all transform hover:-translate-y-1 shadow-lg shadow-rose-500/20 w-full md:w-auto justify-center text-lg">
+                    <i data-lucide="home" class="w-6 h-6"></i>
                     Reservar pelo Airbnb
                 </a>
             </div>
 
-            <div class="bg-[#121826] p-8 md:p-10 rounded-2xl border border-slate-800/60 shadow-xl">
+            <div class="bg-slate-800 p-8 md:p-10 rounded-3xl border border-slate-700 shadow-2xl relative overflow-hidden">
+                <!-- Decorative background blob -->
+                <div class="absolute top-0 right-0 w-64 h-64 bg-amber-500/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2"></div>
+                
+                <h3 class="font-serif text-2xl text-white mb-6 relative z-10">Consulte via WhatsApp</h3>
+                
                 <form class="relative z-10" onsubmit="event.preventDefault();">
                     <div class="mb-5">
-                        <label class="block text-sm text-slate-400 mb-2">Seu nome</label>
-                        <input type="text" class="w-full bg-[#0a0f18] border border-slate-800/60 rounded-lg p-3 text-white focus:border-amber-500 focus:ring-1 focus:ring-amber-500 outline-none transition-colors" required>
+                        <label class="block text-sm font-medium text-slate-400 mb-2">Nome completo</label>
+                        <input type="text" placeholder="Como podemos chamar por si?" class="w-full bg-slate-900/50 border border-slate-700 rounded-xl p-3.5 text-white placeholder-slate-500 focus:border-amber-500 focus:ring-1 focus:ring-amber-500 outline-none transition-colors" required>
                     </div>
 
                     <div class="flex flex-col sm:flex-row gap-5 mb-5">
                         <div class="w-full">
-                            <label class="block text-sm text-slate-400 mb-2">Check-in</label>
-                            <input type="date" class="w-full bg-[#0a0f18] border border-slate-800/60 rounded-lg p-3 text-slate-400 focus:border-amber-500 focus:ring-1 focus:ring-amber-500 outline-none transition-colors [color-scheme:dark]" required>
+                            <label class="block text-sm font-medium text-slate-400 mb-2">Check-in</label>
+                            <input type="date" class="w-full bg-slate-900/50 border border-slate-700 rounded-xl p-3.5 text-white placeholder-slate-500 focus:border-amber-500 focus:ring-1 focus:ring-amber-500 outline-none transition-colors [color-scheme:dark]" required>
                         </div>
                         <div class="w-full">
-                            <label class="block text-sm text-slate-400 mb-2">Check-out</label>
-                            <input type="date" class="w-full bg-[#0a0f18] border border-slate-800/60 rounded-lg p-3 text-slate-400 focus:border-amber-500 focus:ring-1 focus:ring-amber-500 outline-none transition-colors [color-scheme:dark]" required>
+                            <label class="block text-sm font-medium text-slate-400 mb-2">Check-out</label>
+                            <input type="date" class="w-full bg-slate-900/50 border border-slate-700 rounded-xl p-3.5 text-white placeholder-slate-500 focus:border-amber-500 focus:ring-1 focus:ring-amber-500 outline-none transition-colors [color-scheme:dark]" required>
                         </div>
                     </div>
 
                     <div class="mb-6">
-                        <label class="block text-sm text-slate-400 mb-2">Hóspedes</label>
-                        <select class="w-full bg-[#0a0f18] border border-slate-800/60 rounded-lg p-3 text-white focus:border-amber-500 focus:ring-1 focus:ring-amber-500 outline-none transition-colors appearance-none">
-                            <option value="1">1</option>
-                            <option value="2" selected>2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
+                        <label class="block text-sm font-medium text-slate-400 mb-2">Hóspedes</label>
+                        <select class="w-full bg-slate-900/50 border border-slate-700 rounded-xl p-3.5 text-white focus:border-amber-500 focus:ring-1 focus:ring-amber-500 outline-none transition-colors appearance-none">
+                            <option value="1">1 Hóspede</option>
+                            <option value="2" selected>2 Hóspedes</option>
+                            <option value="3">3 Hóspedes</option>
+                            <option value="4">4 Hóspedes</option>
                         </select>
                     </div>
 
-                    <div class="mb-8 flex items-center gap-3">
-                        <input type="checkbox" id="pet" class="w-4 h-4 rounded border-slate-600 text-amber-500 focus:ring-amber-500 bg-[#0a0f18] accent-amber-500 cursor-pointer">
-                        <label for="pet" class="text-sm text-slate-400 cursor-pointer select-none">
-                            Vou levar pet de pequeno porte
+                    <div class="mb-8 flex items-center gap-3 bg-slate-900/30 p-4 rounded-xl border border-slate-700/50">
+                        <input type="checkbox" id="pet" class="w-5 h-5 rounded border-slate-600 text-amber-500 focus:ring-amber-500 bg-slate-900/50 accent-amber-500 cursor-pointer">
+                        <label for="pet" class="text-sm text-slate-300 cursor-pointer flex-1 select-none">
+                            Vou levar o meu Pet 🐾
                         </label>
                     </div>
 
-                    <button type="submit" class="w-full bg-green-500 hover:bg-green-400 text-white font-medium py-3.5 rounded-lg flex items-center justify-center gap-2 transition-colors">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-                        Consultar disponibilidade no WhatsApp
+                    <button type="submit" class="w-full bg-green-600 hover:bg-green-500 text-white font-semibold py-4 rounded-xl flex items-center justify-center gap-2 transition-colors text-lg shadow-lg shadow-green-600/20">
+                        <i data-lucide="send" class="w-5 h-5"></i>
+                        Consultar disponibilidade
                     </button>
-                    <p class="text-xs text-slate-500 mt-4 leading-relaxed">
-                        Reserva confirmada após verificação de disponibilidade e pagamento, combinado diretamente pelo WhatsApp.
-                    </p>
+                    <p class="text-center text-xs text-slate-500 mt-4">Nenhuma cobrança será feita agora.</p>
                 </form>
             </div>
         </div>
     </section>
 
     <!-- 10. Footer -->
-    <footer class="max-w-7xl mx-auto px-6 border-t border-slate-800/50 py-12 text-center flex flex-col items-center gap-2">
-        <p class="text-slate-300 font-serif font-medium text-lg">
-            Cabana Schmitt — Vista das Estrelas
-        </p>
+    <footer class="max-w-7xl mx-auto px-6 border-t border-slate-800 py-10 text-center">
+        <a href="#" class="font-serif text-xl font-semibold text-amber-500 tracking-wide mb-4 inline-block">
+            Cabana Schmitt
+        </a>
         <p class="text-slate-500 text-sm">
-            Esperança · Maratá/RS · Anfitrião: Maico
+            © 2026 Cabana Schmitt. Todos os direitos reservados. Maratá/RS, Brasil.
         </p>
     </footer>
 
